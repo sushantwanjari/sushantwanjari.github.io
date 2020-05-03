@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box; 
+  }
+
+:root{
+    --color1: white;
+    --color2: dimgray;
+}
+
+body {    
+	margin: 0;
+    background-color: var(--color1, dimgray);
+    color: var(--color2,red);
+}
+
+/*
+@font-face {
+    font-family: 'Roslindale';
+    src: url('/fonts/Roslindale/RoslindaleVariableDisplay-VF.woff2') format('woff2');
+  }
+
+@font-face {
+      font-family: 'Portada';
+    src: url('/fonts/typetogether/Portada_variable_DEMO/Portada_Variable-Upright-DEMO.woff2') format('woff2');
+  }
+*/  
+
+html {
+    font-family: Helvetica;
+    font-size: 100%;
+      line-height: 1.85;
+      font-variation-settings: 'opsz' 36;
+    height:100%
+}
+
+
+nav {
+    display: grid;
+    grid-template-columns: auto, 1fr, 1fr, 1fr;
+    grid-template-areas: 
+        "a b c d";
+    background-color: lightblue;
+}
+
+.grid-container {
+	display: grid;
+	grid-gap: 1.2rem 2rem;
+	grid-template-columns: 1fr minmax(200px, 650px) 1fr;
+    margin: 0 0 5rem;
+}
+
+h1 {
+    grid-column: 2 / 3 ;	
+    grid-row: 1 / 2;
+	z-index: 1;
+	align-self: center;
+	margin: 0;
+    font-family: 'Roslindale', Georgia;
+	font-size: calc(6vw + 1.8rem);
+	font-weight: 375;
+	line-height: 1.1;
+    color: white;    
+}
+
+
+h2, section {
+	grid-column: 2 / 3;
+}
+
+img.intro {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+    filter: brightness(0.4);
+    width: 100%;
+	margin: 2rem 0;
+}
+
+p {
+	font-size: 110%;
+}
+
+header {
+    color: white;
+}
+
+#home {
+    grid-area: b;
+}
+
+#touch {
+    grid-area: c;
+}
+#about {
+    grid-area: d;
+}
+
+footer {
+    font-size: 0.8rem;
+}
