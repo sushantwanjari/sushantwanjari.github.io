@@ -1,41 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sushant Wanjari">
     <meta name="description" content="This is a test website">
-    <meta charset="UTF-8">
-    <title>Test Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Test WebSite</title>
 </head>
 
 <body>
-    <header>
-        <!--
-        <nav>
-            <div id="home">Home</div>
-            <div id="touch">Get in touch</div>
-            <div id="about">About me</div>
-        </nav>
+    <div class="welcome">
+        <div class="headroom" id="top"></div>
+        <header>
+            <h1 class="logo">My Website</h1>
 
-        -->
-    </header>
+            <nav>
+                <ul>
+                    <li><a class="link" href="#">Home</a></li>
+                    <li class="dropdown"><a class="link" href="#">Sites</a>
+                        <div class="dropdown-items">
+                            <a href="#">Blog</a>
+                            <a href="#">Tutorials</a>
+                        </div>
+                    </li>
+                    <li><a class="link" href="#">About</a></li>
+                    <li><a class="link" href="#">Contact</a></li>
+
+                </ul>
+            </nav>
+
+        </header>
+        <div class="hello">
+            <img src="src/avatar.jpg" alt="skydive">
+            <p>Hello, I'm Sushant Wanjari</p>
+            <p class="subtext">A data enthusiast..</p>
+        </div>
+
+    </div>
+
+    <div class="section1">
+        <p>this is the sizzzz...</p>
+        <p>this is the sizzzz...</p>
+        <p>this is the sizzzz...</p>
+        <p>this is the sizzzz...</p>
+        <P><a href="#top">TOP</a></P>
+    </div>
     <main>
-        <article class="grid-container">
-            <img class="intro" src="src/coast.jpg" alt="coast">
-            <h1>Better Late than Never.</h1>
-            <h2>This is harder than I thought it to be..</h2>
-            <section>
-                <p>This better turn out to be worth the effort I'm putting into..</p>
-                <aside>
-
-                </aside>
-            </section>
-        </article>
+        <!-- <div class="content">
+            <h2 id="Content">my content will go here</h2>
+        </div> -->
     </main>
-    <footer>
-        <p><i>This is a footer</i></p>
-    </footer>
 </body>
+
+
+
+
 
 </html>
